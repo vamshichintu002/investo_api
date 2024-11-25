@@ -1,0 +1,235 @@
+OUTPUT should look like:
+S C:\Users\Strand\Desktop\lyzr> python app.py
+Starting Investment Portfolio Analysis...
+
+=== Indian Investment Portfolio Advisor ===
+
+Initializing advisor...
+
+Creating client profile with example parameters:
+- Risk Tolerance: Moderate
+- Investment Timeline: 10 years
+- Financial Goals: Retirement, Children's Education
+- Initial Investment: ₹10,00,000
+
+Raw Response: {
+    "risk_profile": {
+        "tolerance_level": "Moderate",
+        "investment_horizon": "10 years",
+        "risk_capacity": "Medium"
+    },
+    "investment_objectives": {
+        "primary_goals": ["Retirement", "Children's Education"],
+        "target_return": "8-10% annual return",
+        "constraints": ["Inflation", "Market volatility", "Changes in tax laws"]
+    },
+    "financial_situation": {
+        "initial_investment": 1000000.00,
+        "investment_category": "Balanced Portfolio",
+        "liquidity_needs": "Medium"
+    },
+    "investment_strategy": {
+        "asset_allocation": {
+            "Equity Mutual Funds": "50%",
+            "Debt Mutual Funds": "30%",
+            "Gold ETFs": "10%",
+            "Real Estate Investment Trusts (REITs)": "10%"
+        },
+        "tax_planning": "Investment in Equity Linked Saving Scheme (ELSS) and utilization of ₹150,000 tax deduction under section 80C",
+        "risk_management": "Portfolio diversification and periodic rebalancing"
+    },
+    "market_analysis": {
+        "economic_outlook": "Positive with expected steady growth",
+        "sector_preference": "Information Technology, Pharmaceuticals, FMCG",
+        "impact_of_global_factors": "Moderate"
+    }
+}
+
+=== Client Profile Created ===
+Risk Profile:
+{'investment_horizon': '10 years',
+ 'risk_capacity': 'Medium',
+ 'tolerance_level': 'Moderate'}
+
+Investment Objectives:
+{'constraints': ['Inflation', 'Market volatility', 'Changes in tax laws'],
+ 'primary_goals': ['Retirement', "Children's Education"],
+ 'target_return': '8-10% annual return'}
+
+Financial Situation:
+{'initial_investment': 1000000.0,
+ 'investment_category': 'Balanced Portfolio',
+ 'liquidity_needs': 'Medium'}
+
+=== Generating Portfolio Recommendation ===
+
+Portfolio Raw Response: {
+  "portfolio": {
+    "Large_Cap_Stocks": 25,
+    "Mid_Cap_Stocks": 15,
+    "Small_Cap_Stocks": 10,
+    "Government_Bonds": 20,
+    "Corporate_FDs": 10,
+    "Mutual_Funds": 15,
+    "Gold_ETFs": 5
+  },
+  "strategy": "Based on the client's moderate risk profile and medium-term investment horizon of 10 years, a balanced portfolio strategy is adopted. 50% of the portfolio is allocated to equity through a combination of large-cap, mid-cap, and small-cap stocks. This will provide a good mix of stability and growth. Large-cap stocks provide stability, while mid-cap and small-cap stocks offer higher growth potential. Preference is given to sectors like IT, Pharmaceuticals, and FMCG as per the client's preference and the positive economic outlook. 30% of the portfolio is allocated to debt instruments including government bonds and corporate fixed deposits, ensuring regular income and safety of capital. The remaining 20% is invested in mutual funds and Gold ETFs for further diversification and hedge against inflation. Regular portfolio rebalancing and tax planning through ELSS investments are part of the strategy to manage risk and optimize returns."   
+}
+
+Recommended Portfolio Allocation:
+{'Corporate_FDs': 10,
+ 'Gold_ETFs': 5,
+ 'Government_Bonds': 20,
+ 'Large_Cap_Stocks': 25,
+ 'Mid_Cap_Stocks': 15,
+ 'Mutual_Funds': 15,
+ 'Small_Cap_Stocks': 10}
+
+Investment Strategy:
+Based on the client's moderate risk profile and medium-term investment horizon of 10 years, a balanced portfolio strategy is adopted. 50% of the portfolio is allocated to equity through a combination of large-cap, mid-cap, and small-cap stocks. This will provide a good mix of stability and growth. Large-cap stocks provide stability, while mid-cap and small-cap stocks offer higher growth potential. Preference is given to sectors like IT, Pharmaceuticals, and FMCG as per the client's preference and the positive economic outlook. 30% of the portfolio is allocated to debt instruments including government bonds and corporate fixed deposits, ensuring regular income and safety of capital. The remaining 20% is invested in mutual funds and Gold ETFs for further diversification and hedge against inflation. Regular portfolio rebalancing and tax planning through ELSS investments are part of the strategy to manage risk and optimize returns.
+
+Generating portfolio visualization...
+Portfolio visualization saved to: plot/portfolio_allocation.png
+
+=== Indian Market Analysis ===
+Analyzing market data for: RELIANCE, TCS, HDFCBANK, INFY, BHARTIARTL
+
+Market Analysis Raw Response: {
+    "market_trends": {
+        "nifty50_outlook": "The Indian market has been on a strong uptrend, thanks to robust corporate earnings and positive economic indicators. However, rising inflation and interest rates could pose challenges.",
+        "sector_analysis": {
+            "Reliance_Industries": "Reliance operates in sectors like telecom, retail, and oil & gas. While telecom and retail have shown robust growth, the oil sector faces global volatility.",
+            "TCS": "The IT sector is experiencing strong demand due to the digital transformation wave. However, wage inflation and attrition are concerns.",
+            "HDFCBANK": "The banking sector is recovering from the NPAs issue but rising interest rates could affect loan growth.",
+            "Infosys": "Similar to TCS, Infosys is part of the IT sector which is seeing robust demand but wage inflation and attrition are key issues.",
+            "Bharti_Airtel": "The telecom sector is seeing intense competition but data consumption growth is a positive factor."
+        },
+        "global_factors": ["US interest rate hikes", "Global oil prices", "Trade wars"]
+    },
+    "risk_analysis": {
+        "market_risks": ["Rising inflation", "Interest rate hikes"],
+        "regulatory_risks": ["Changes in corporate tax rates", "Regulatory changes in sectors like telecom and banking"],
+        "company_specific_risks": {
+            "Reliance_Industries": ["High debt levels", "Competition in telecom sector"],
+            "TCS": ["Wage inflation", "Attrition"],
+            "HDFCBANK": ["Asset quality", "Loan growth"],
+            "Infosys": ["Wage inflation", "Attrition"],
+            "Bharti_Airtel": ["Competition", "Regulatory changes"]
+        }
+    },
+    "growth_potential": {
+        "short_term": {
+            "Reliance_Industries": "Positive due to telecom and retail growth",
+            "TCS": "Positive due to strong IT demand",
+            "HDFCBANK": "Neutral due to rising interest rates",
+            "Infosys": "Positive due to strong IT demand",
+            "Bharti_Airtel": "Neutral due to intense competition"
+        },
+        "long_term": {
+            "Reliance_Industries": "Positive due to diversification",
+            "TCS": "Positive due to digital transformation wave",
+            "HDFCBANK": "Positive due to expanding economy",
+            "Infosys": "Positive due to digital transformation wave",
+            "Bharti_Airtel": "Positive due to data consumption growth"
+        },
+        "catalysts": ["Lowering of corporate tax rates", "Stronger economic growth", "Digital transformation wave"]     
+    },
+    "recommendations": {
+        "buy_hold_sell": {
+            "Reliance_Industries": "BUY",
+            "TCS": "BUY",
+            "HDFCBANK": "HOLD",
+            "Infosys": "BUY",
+            "Bharti_Airtel": "HOLD"
+        },
+        "target_prices": {
+            "Reliance_Industries": "3200",
+            "TCS": "3500",
+            "HDFCBANK": "1650",
+            "Infosys": "1800",
+            "Bharti_Airtel": "750"
+        },
+        "investment_horizon": {
+            "Reliance_Industries": "long term",
+            "TCS": "long term",
+            "HDFCBANK": "medium term",
+            "Infosys": "long term",
+            "Bharti_Airtel": "medium term"
+        }
+    }
+}
+
+Market Trends:
+{'global_factors': ['US interest rate hikes',
+                    'Global oil prices',
+                    'Trade wars'],
+ 'nifty50_outlook': 'The Indian market has been on a strong uptrend, thanks to '
+                    'robust corporate earnings and positive economic '
+                    'indicators. However, rising inflation and interest rates '
+                    'could pose challenges.',
+ 'sector_analysis': {'Bharti_Airtel': 'The telecom sector is seeing intense '
+                                      'competition but data consumption growth '
+                                      'is a positive factor.',
+                     'HDFCBANK': 'The banking sector is recovering from the '
+                                 'NPAs issue but rising interest rates could '
+                                 'affect loan growth.',
+                     'Infosys': 'Similar to TCS, Infosys is part of the IT '
+                                'sector which is seeing robust demand but wage '
+                                'inflation and attrition are key issues.',
+                     'Reliance_Industries': 'Reliance operates in sectors like '
+                                            'telecom, retail, and oil & gas. '
+                                            'While telecom and retail have '
+                                            'shown robust growth, the oil '
+                                            'sector faces global volatility.',
+                     'TCS': 'The IT sector is experiencing strong demand due '
+                            'to the digital transformation wave. However, wage '
+                            'inflation and attrition are concerns.'}}
+
+Risk Analysis:
+{'company_specific_risks': {'Bharti_Airtel': ['Competition',
+                                              'Regulatory changes'],
+                            'HDFCBANK': ['Asset quality', 'Loan growth'],
+                            'Infosys': ['Wage inflation', 'Attrition'],
+                            'Reliance_Industries': ['High debt levels',
+                                                    'Competition in telecom '
+                                                    'sector'],
+                            'TCS': ['Wage inflation', 'Attrition']},
+ 'market_risks': ['Rising inflation', 'Interest rate hikes'],
+ 'regulatory_risks': ['Changes in corporate tax rates',
+                      'Regulatory changes in sectors like telecom and banking']}
+
+Growth Potential:
+{'catalysts': ['Lowering of corporate tax rates',
+               'Stronger economic growth',
+               'Digital transformation wave'],
+ 'long_term': {'Bharti_Airtel': 'Positive due to data consumption growth',
+               'HDFCBANK': 'Positive due to expanding economy',
+               'Infosys': 'Positive due to digital transformation wave',
+               'Reliance_Industries': 'Positive due to diversification',
+               'TCS': 'Positive due to digital transformation wave'},
+ 'short_term': {'Bharti_Airtel': 'Neutral due to intense competition',
+                'HDFCBANK': 'Neutral due to rising interest rates',
+                'Infosys': 'Positive due to strong IT demand',
+                'Reliance_Industries': 'Positive due to telecom and retail '
+                                       'growth',
+                'TCS': 'Positive due to strong IT demand'}}
+
+Recommendations:
+{'buy_hold_sell': {'Bharti_Airtel': 'HOLD',
+                   'HDFCBANK': 'HOLD',
+                   'Infosys': 'BUY',
+                   'Reliance_Industries': 'BUY',
+                   'Reliance_Industries': 'BUY',
+                   'TCS': 'BUY'},
+ 'investment_horizon': {'Bharti_Airtel': 'medium term',
+                        'HDFCBANK': 'medium term',
+                        'Infosys': 'long term',
+                        'Reliance_Industries': 'long term',
+                        'TCS': 'long term'},
+ 'target_prices': {'Bharti_Airtel': '750',
+                   'HDFCBANK': '1650',
+                   'Infosys': '1800',
+                   'Reliance_Industries': '3200',
+                   'TCS': '3500'}}
+
+=== Analysis Complete ===
